@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SiteDocket Support</title>
+<meta name="description" content="Support for SiteDocket: Job Photo Reports on iPhone and iPad — camera stamps, voice notes, service catalog, PDF reports, backups, and subscriptions.">
+<style>
+  :root {
+    --bg: #F8FAFC; --surface: #FFFFFF; --text: #0F172A; --muted: #475569;
+    --accent: #2563EB; --tint: #DBEAFE; --hairline: #E2E8F0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0F19; --surface: #111827; --text: #F8FAFC; --muted: #94A3B8;
+      --accent: #60A5FA; --tint: #1E293B; --hairline: #1E293B;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  .mark {
+    width: 64px; height: 64px; border-radius: 16px; background: var(--tint);
+    display: grid; place-items: center; margin-bottom: 24px;
+  }
+  .mark svg { width: 32px; height: 32px; fill: var(--accent); }
+  h1 { font: 700 32px/1.2 -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; margin: 0 0 8px; }
+  h2 { font: 600 20px/1.3 -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; margin: 32px 0 8px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--hairline); border-radius: 16px;
+    padding: 16px 24px; margin: 24px 0;
+  }
+  .card p { margin: 8px 0; }
+  dt { font-weight: 600; margin-top: 18px; }
+  dd { margin: 4px 0 0; color: var(--muted); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: 15px; margin-top: 48px; border-top: 1px solid var(--hairline); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="M9 2a1 1 0 0 0-.894.553L7.382 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3.382l-.724-1.447A1 1 0 0 0 15 2H9Zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
+  </div>
+  <h1>SiteDocket Support</h1>
+  <p class="meta">SiteDocket: Job Photo Reports for iPhone and iPad</p>
+
+  <div class="card">
+    <p><strong>Need help?</strong> Email <a href="mailto:JfDevIos@gmail.com">JfDevIos@gmail.com</a></p>
+    <p>Include your device model and the SiteDocket version shown at the bottom of the <strong>Settings</strong> tab.</p>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <dl>
+    <dt>How do I set up my reusable Service Catalog &amp; default tax rate?</dt>
+    <dd>Open <strong>Settings › Service Catalog &amp; Pricing</strong>. Tap <strong>Load Starter Trade Services</strong> to pre-fill common trade items or tap <strong>+</strong> to add your own services, unit rates, and default sales tax percentage. On any job, tap <strong>Pick Service</strong> to itemize services in one tap.</dd>
+
+    <dt>How do I add a discount or adjust sales tax on a job?</dt>
+    <dd>Inside any job with itemized services, tap <strong>Add Tax or Discount</strong> (or <strong>Edit Tax &amp; Discount</strong>) below the total cost to apply a dollar ($) or percentage (%) discount and customize the job's tax rate. Both appear automatically on your generated PDF report.</dd>
+
+    <dt>How do I back up or restore all of my jobs and photos?</dt>
+    <dd>Go to <strong>Settings › Export All Data</strong> to save a complete ZIP archive containing your jobs, service catalog, photos, voice notes, PDF reports, and CSV spreadsheet. To import a backup on a new device, tap <strong>Settings › Restore from Backup</strong> and select your ZIP file.</dd>
+
+    <dt>How do I restore my SiteDocket Pro subscription or manage billing?</dt>
+    <dd>Open <strong>Settings › Plan › Restore Purchases</strong> inside SiteDocket. To change or cancel a subscription, open the iOS <strong>Settings</strong> app › tap your Apple Account name › <strong>Subscriptions</strong>.</dd>
+  </dl>
+
+  <footer>
+    <p>© 2026 Jason Fraser · <a href="../">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple Standard EULA)</a></p>
+  </footer>
+</main>
+</body>
+</html>
